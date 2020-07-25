@@ -1,0 +1,67 @@
+.board {
+    .array-row {
+        display: flex;
+        .item-block {
+            padding: 20px;
+            text-align: center;
+            width: 80px;
+            font-size: 18px;
+            margin: 8px;
+            box-shadow: 0px 0px 5px 3px #eee;
+            &.active {
+                border: 2px solid #38b38b;
+                background: #ddfdeb;
+            }
+            .item {
+                padding: 5px;
+            }
+        }
+    }
+}
+.left-panel {
+    text-align: center;
+    padding: 100px 20px;    
+    .random-number {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        width: 50px;
+        border: 2px solid #399678;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0px 5px;
+    }
+    .random-number:last-child {
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+        width: 100px;
+        border: 2px solid #399678;
+        border-radius: 50%;
+        margin: 0px 5px;
+    }
+    #rn-1{
+        opacity: 0.25;
+    }
+    #rn-2, #rn-1.number-3{
+        opacity: 0.5;
+    }
+    #rn-3, #rn-1.number-2, #rn-2.number-3{
+        opacity: 0.75;
+    }
+    #rn-4, #rn-1.number-1, #rn-2.number-2, #rn-3.number-3{
+        opacity: 1;
+    }
+    .status-msg {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px 0px;
+    }
+    .button-list {
+        display: inline-flex;
+    }
+    .form-group {
+        padding: 10px;
+    }
+    
+}
